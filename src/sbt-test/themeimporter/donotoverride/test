@@ -1,0 +1,14 @@
+# check existing files are not overridden
+
+# sleep so that mark is created with a clearly different timestamp than the whole project
+$ sleep 2000
+$ touch mark
+
+> importTemplateFiles cart.hbs
+
+$ exists src/main/resources/templates/cart.hbs
+$ newer mark src/main/resources/templates/cart.hbs
+
+> importI18nFiles en/main.yaml
+$ exists src/main/resources/i18n/en/main.yaml
+$ newer mark src/main/resources/i18n/en/main.yaml

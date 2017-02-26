@@ -61,9 +61,13 @@ object ThemeImporterPlugin extends AutoPlugin {
         .foreach(resourceName => {
           val sourceFile = sourceFolder / resourceName
           val targetFile = destFolder / resourceName
-          logger.debug("Copying file from " + sourceFile + " to " + targetFile)
-          IO.copyFile(sourceFile, targetFile)
-          logger.success("Successfully imported file " + resourceName + " into folder " + destFolder.name)
+          if (targetFile.exists) {
+            logger.warn("Skipping file, " + resourceName + " already exists in destination folder " + destFolder.name)
+          } else {
+            logger.debug("Copying file from " + sourceFile + " to " + targetFile)
+            IO.copyFile(sourceFile, targetFile)
+            logger.success("Successfully imported file " + resourceName + " into folder " + destFolder.name)
+          }
         })
     }
   }

@@ -1,0 +1,9 @@
+# check non existing files are ignored
+
+> importTemplateFiles wrong.hbs cart.hbs
+$ exists src/main/resources/templates/cart.hbs
+$ absent src/main/resources/templates/wrong.hbs
+
+> importI18nFiles en/main.yaml fr/main.yaml
+$ exists src/main/resources/i18n/en/main.yaml
+$ absent src/main/resources/i18n/fr/main.yaml
