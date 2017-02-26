@@ -1,5 +1,4 @@
-import sbt.Keys.{resolvers, scalaVersion}
-import sbt.Resolver
+import sbt.Keys.scalaVersion
 
 lazy val root = (project in file("."))
     .enablePlugins(SunriseThemeImporterPlugin)

@@ -1,9 +1,9 @@
 # check if the files get created
 
-> importTemplateFiles common/logo.hbs cart.hbs
+> sunriseThemeImportTemplateFiles common/logo.hbs cart.hbs
 $ exists src/main/resources/templates/common/logo.hbs
 $ exists src/main/resources/templates/cart.hbs
 
-> importI18nFiles en/main.yaml de/main.yaml
+> sunriseThemeImportI18nFiles en/main.yaml de/main.yaml
 $ exists src/main/resources/i18n/en/main.yaml
 $ exists src/main/resources/i18n/de/main.yaml

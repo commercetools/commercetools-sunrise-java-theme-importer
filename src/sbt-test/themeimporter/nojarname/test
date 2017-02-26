@@ -1,0 +1,5 @@
+# fails when no jar file with defined name
+
+-> sunriseThemeImportTemplateFiles wrong.hbs cart.hbs
+
+-> sunriseThemeImportI18nFiles fr/main.yaml en/main.yaml

@@ -2,7 +2,7 @@ import sbt.Keys.{resolvers, scalaVersion}
 import sbt.Resolver
 
 lazy val root = (project in file("."))
-    .enablePlugins(ThemeImporterPlugin)
+    .enablePlugins(SunriseThemeImporterPlugin)
     .settings(
       version := "0.1",
       scalaVersion := "2.11.8",

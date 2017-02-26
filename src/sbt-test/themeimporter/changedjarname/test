@@ -1,8 +1,8 @@
-# check non existing files are ignored
+# check it fins JAR with given name
 
 > sunriseThemeImportTemplateFiles wrong.hbs cart.hbs
-$ absent src/main/resources/templates/wrong.hbs
 $ exists src/main/resources/templates/cart.hbs
+$ absent src/main/resources/templates/wrong.hbs
 
 > sunriseThemeImportI18nFiles fr/main.yaml en/main.yaml
 $ exists src/main/resources/i18n/en/main.yaml

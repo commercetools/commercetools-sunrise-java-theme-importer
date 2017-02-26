@@ -1,6 +1,6 @@
 sbtPlugin := true
 
-name := "commercetools-sunrise-theme-importer"
+name := "sbt-commercetools-sunrise-theme-importer"
 
 organization in ThisBuild := "com.commercetools.sunrise"
 
