@@ -34,8 +34,8 @@ object Release {
     pomIncludeRepository in ThisBuild := { _ => false },
     pomExtra in ThisBuild :=
       <scm>
-        <url>git@github.com:scommercetools/commercetools-sunrise-java.git</url>
-        <connection>scm:git:git@github.com:commercetools/commercetools-sunrise-java.git</connection>
+        <url>git@github.com:scommercetools/commercetools-sunrise-java-theme-importer.git</url>
+        <connection>scm:git:git@github.com:commercetools/commercetools-sunrise-java-theme-importer.git</connection>
       </scm>
       <developers>
         <developer>
