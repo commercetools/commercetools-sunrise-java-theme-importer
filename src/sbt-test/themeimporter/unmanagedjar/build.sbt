@@ -4,5 +4,6 @@ lazy val root = (project in file("."))
     .enablePlugins(SunriseThemeImporterPlugin)
     .settings(
       version := "0.1",
-      scalaVersion := "2.11.8"
+      scalaVersion := "2.11.8",
+      sunriseThemeJarName := "commercetools-sunrise-theme"
     )
