@@ -21,6 +21,8 @@ object SunriseThemeImporterPlugin extends AutoPlugin {
 
     lazy val baseSunriseThemeImporterSettings: Seq[Def.Setting[_]] = Seq(
 
+      sunriseThemeJarName := "commercetools-sunrise-theme",
+
       sunriseThemeImportTemplateFiles := {
         val fileNames = spaceDelimited("<arg>").parsed.map("templates/" + _)
         val resourceDir = (resourceDirectory in Compile).value

@@ -9,6 +9,5 @@ lazy val root = (project in file("."))
       resolvers += Resolver.bintrayRepo("commercetools", "maven"),
       libraryDependencies ++= Seq (
         "com.commercetools.sunrise" % "commercetools-sunrise-theme" % "0.64.0"
-      ),
-      sunriseThemeJarName := "commercetools-sunrise-theme"
+      )
     )

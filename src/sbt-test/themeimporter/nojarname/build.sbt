@@ -9,5 +9,5 @@ lazy val root = (project in file("."))
       libraryDependencies ++= Seq (
         "com.commercetools.sunrise" % "commercetools-sunrise-theme" % "0.64.0"
       ),
-      sunriseThemeJarName := "some-other-name"
+      sunriseThemeJarName in Compile := "some-other-name"
     )

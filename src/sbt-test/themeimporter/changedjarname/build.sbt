@@ -5,5 +5,5 @@ lazy val root = (project in file("."))
     .settings(
       version := "0.1",
       scalaVersion := "2.11.8",
-      sunriseThemeJarName := "some-other-name"
+      sunriseThemeJarName in Compile := "some-other-name"
     )
