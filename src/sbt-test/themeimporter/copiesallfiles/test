@@ -1,0 +1,9 @@
+# check if the files get created
+
+> sunriseThemeImportAll
+$ exists src/main/resources/templates
+$ exists src/main/resources/i18n
+$ exists public/fonts
+$ exists public/javascripts
+$ exists public/stylesheets
+$ exists public/images
