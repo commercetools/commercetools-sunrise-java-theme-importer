@@ -1,0 +1,11 @@
+# check if the files get created
+
+> importTemplateFiles common/logo.hbs cart.hbs wrong.hbs
+$ exists src/main/resources/templates/common/logo.hbs
+$ exists src/main/resources/templates/cart.hbs
+$ absent src/main/resources/templates/wrong.hbs
+
+> importI18nFiles en/main.yaml de/main.yaml fr/main.yaml
+$ exists src/main/resources/i18n/en/main.yaml
+$ exists src/main/resources/i18n/de/main.yaml
+$ absent src/main/resources/i18n/fr/main.yaml
