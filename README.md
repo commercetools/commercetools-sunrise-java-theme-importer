@@ -16,7 +16,13 @@ val root = (project in file("."))
   .enablePlugins(SunriseThemeImporterPlugin)
 ```
 
-## SBT Commands
+## Configuration
+
+`sunriseThemeJarName in Compile`: Name of the webjar dependency containing the Sunrise Theme (default "commercetools-sunrise-theme")
+
+## Commands
+
+Once the plugin has been enabled, you will be able to access the following commands in SBT.
 
 ### Import all files
 Import all Theme's files into the project to enable editing:
