@@ -46,13 +46,13 @@ object SunriseThemeImporterPlugin extends AutoPlugin {
         val logger = streams.value.log
         val themeJar = sunriseThemeJar.value
 
-        val cssDir = baseDirectory.value / "public" / "stylesheets"
+        val cssDir = baseDirectory.value / "public" / "css"
         copyDirContentToResources("css", themeJar, cssDir, logger)
 
-        val jsDir = baseDirectory.value / "public" / "javascripts"
+        val jsDir = baseDirectory.value / "public" / "js"
         copyDirContentToResources("js", themeJar, jsDir, logger)
 
-        val imgDir = baseDirectory.value / "public" / "images"
+        val imgDir = baseDirectory.value / "public" / "img"
         copyDirContentToResources("img", themeJar, imgDir, logger)
 
         val fontsDir = baseDirectory.value / "public" / "fonts"
