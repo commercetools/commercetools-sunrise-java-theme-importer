@@ -7,7 +7,7 @@ SBT plugin that allows to import parts of the theme into a Sunrise project
 ## Installation
 Add this plugin to your project in `project/plugins.sbt`:
 ```
-addSbtPlugin("com.commercetools.sunrise" % "sbt-commercetools-sunrise-theme-importer" % "0.1.0")
+addSbtPlugin("com.commercetools.sunrise" % "sbt-commercetools-sunrise-theme-importer" % "0.2.0")
 ```
 
 Then enable it in your root project's settings:
