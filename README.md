@@ -1,7 +1,5 @@
 # WebJar Importer
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.commercetools.sunrise/sbt-commercetools-sunrise-theme-importer/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.commercetools.sunrise/sbt-commercetools-sunrise-theme-importer)
-
 SBT plugin that allows to import parts of a WebJar into your project
 
 ## Installation
